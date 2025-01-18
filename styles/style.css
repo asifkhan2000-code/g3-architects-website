@@ -1,8 +1,120 @@
 /* font style */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .work-sans-font {
-    font-family: "Work Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+.display-flex {
+  display: flex;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+/* dark 01 */
+.text-dark-gray {
+  color: #131313;
+}
+/* dark 02 */
+.text-gray {
+  color: rgba(66, 66, 66, 1);
+}
+/* dark 03 */
+.text-light-gray {
+  color: #727272;
+}
+.bg-1 {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary {
+  background-color: rgba(255, 144, 14, 1);
+  border-radius: 8px;
+  padding: 22px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 50px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: black;
+}
+/* navbar  and banner section styles */
+.navbar {
+  padding-top: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links {
+  gap: 30px;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 26px;
+}
+.nav-link:hover {
+  background-color: rgba(255, 144, 14, 1);
+  padding: 5px;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.banner {
+  margin-top: 100px;
+}
+.banner-content {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: auto;
+}
+.banner-description {
+  margin-bottom: 30px;
+  line-height: 26px;
+}
+.banner .banner-img {
+  width: 100%;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .navbar {
+    padding-top: 20px;
+  }
+  .nav-links {
+    gap: 10px;
+  }
+  .banner {
+    margin-top: 10px;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 576.1px) and (max-width: 592px) {
+    
+}
